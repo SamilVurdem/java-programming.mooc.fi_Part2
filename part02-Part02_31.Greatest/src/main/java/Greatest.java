@@ -1,0 +1,20 @@
+
+public class Greatest {
+
+    public static void main(String[] args) {
+        int result = greatest(9, 9, 8);
+        System.out.println("Greatest: " + result);
+    }
+    public static int greatest(int number1, int number2, int number3) {
+        int max = number1;
+        if (number2 > max) {
+            max = number2;
+        }
+
+        if (number3 > max) {
+            max = number3;
+        }
+
+        return max;
+    }
+}
